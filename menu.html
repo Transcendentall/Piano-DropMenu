@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<style>
+
+body 
+{
+    margin:  0px;
+    padding:20px;
+    left:20px;
+}
+
+ul 
+{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+    display: block;
+}
+
+ul:after 
+{
+    display: block;
+}
+
+ul.menulevel1 > li 
+{
+    float: left;
+    position: relative;
+}
+
+ul.menulevel1 > li > a 
+{
+    display: block;
+    padding: 30px;
+    background-color: #00FF19;
+}
+
+ul.menulevel2 
+{
+    list-style: none;
+    position: absolute;
+    width: 140px;
+    top: 75px;
+    left:10px;
+    display: none;
+}
+
+ul.menulevel2 > li 
+{
+    display: block;
+}
+
+ul.menulevel2 > li > a 
+{
+    display: block;
+    padding: 15px;
+    background-color: #76FF00;
+}
+
+ul.menulevel1 > li:hover > ul.menulevel2 
+{
+    display: block;
+}
+
+</style>
+</head>
+
+ <body bgcolor="#D2FF60">
+
+<tag1> 
+<blockquote>
+	<h1><em>Лабораторная работа № 4,</em></h1>
+	<h1><em>или создание выпадающего меню</em></h1>
+</blockquote>
+</tag1> 
+
+<ul class="menulevel1">
+    <li><a href=#>Живые существа</a>
+        <ul class="menulevel2">
+            <li><a href=#>Бактерии</a></li>
+            <li><a href=#>Грибы</a></li>
+            <li><a href=#>Растения</a></li>
+            <li><a href=#>Животные</a></li>
+        </ul>
+    </li>
+</ul>
+</body>
+</body>
+</html>
